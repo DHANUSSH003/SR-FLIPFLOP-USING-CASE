@@ -40,6 +40,7 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 5.For different input combinations generate the timing diagram.
 
 **PROGRAM**
+```
 module sr(S,R,clk,Q,Qbar);
 input S,R,clk;
 output reg Q;
@@ -52,6 +53,7 @@ Q=S|((~R)&Q);
 Qbar=R|((~S)&(Qbar));
 end 
 endmodule
+```
 
 
 **RTL LOGIC FOR FLIPFLOPS**
